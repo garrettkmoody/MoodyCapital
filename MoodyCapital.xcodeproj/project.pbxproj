@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		737FFBE76D8F4472BFD24EC8 /* Pods_MoodyCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F96823651864CA7790D8474 /* Pods_MoodyCapital.framework */; };
+		C736DE632683D1BB00237553 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736DE622683D1BB00237553 /* SignUpViewController.swift */; };
+		C736DE652683D1CE00237553 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736DE642683D1CE00237553 /* LoginViewController.swift */; };
+		C736DE672683D1E500237553 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736DE662683D1E500237553 /* HomeViewController.swift */; };
+		C765FDEB26828369000611AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C765FDEA26828369000611AA /* AppDelegate.swift */; };
+		C765FDED26828369000611AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C765FDEC26828369000611AA /* SceneDelegate.swift */; };
+		C765FDEF26828369000611AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C765FDEE26828369000611AA /* ViewController.swift */; };
+		C765FDF226828369000611AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C765FDF026828369000611AA /* Main.storyboard */; };
+		C765FDF42682836B000611AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C765FDF32682836B000611AA /* Assets.xcassets */; };
+		C765FDF72682836B000611AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C765FDF52682836B000611AA /* LaunchScreen.storyboard */; };
+		C765FE0226828C9C000611AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C765FE0126828C9C000611AA /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F96823651864CA7790D8474 /* Pods_MoodyCapital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodyCapital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74EB8A66E1E8881780B2F2E9 /* Pods-MoodyCapital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodyCapital.debug.xcconfig"; path = "Target Support Files/Pods-MoodyCapital/Pods-MoodyCapital.debug.xcconfig"; sourceTree = "<group>"; };
+		960144CDC9CFBF3DA15B620B /* Pods-MoodyCapital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodyCapital.release.xcconfig"; path = "Target Support Files/Pods-MoodyCapital/Pods-MoodyCapital.release.xcconfig"; sourceTree = "<group>"; };
+		C736DE622683D1BB00237553 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C736DE642683D1CE00237553 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C736DE662683D1E500237553 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C765FDE726828369000611AA /* MoodyCapital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodyCapital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C765FDEA26828369000611AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C765FDEC26828369000611AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C765FDEE26828369000611AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C765FDF126828369000611AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C765FDF32682836B000611AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C765FDF62682836B000611AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C765FDF82682836B000611AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C765FE0126828C9C000611AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C765FDE426828369000611AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737FFBE76D8F4472BFD24EC8 /* Pods_MoodyCapital.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31BA61A487A889BA2C621E0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74EB8A66E1E8881780B2F2E9 /* Pods-MoodyCapital.debug.xcconfig */,
+				960144CDC9CFBF3DA15B620B /* Pods-MoodyCapital.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E9B799398D0CBE9A0609E39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F96823651864CA7790D8474 /* Pods_MoodyCapital.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C736DE682683D1F400237553 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C736DE662683D1E500237553 /* HomeViewController.swift */,
+				C736DE642683D1CE00237553 /* LoginViewController.swift */,
+				C736DE622683D1BB00237553 /* SignUpViewController.swift */,
+				C765FDEE26828369000611AA /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C765FDDE26828369000611AA = {
+			isa = PBXGroup;
+			children = (
+				C765FDE926828369000611AA /* MoodyCapital */,
+				C765FDE826828369000611AA /* Products */,
+				31BA61A487A889BA2C621E0F /* Pods */,
+				5E9B799398D0CBE9A0609E39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C765FDE826828369000611AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C765FDE726828369000611AA /* MoodyCapital.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C765FDE926828369000611AA /* MoodyCapital */ = {
+			isa = PBXGroup;
+			children = (
+				C765FDEA26828369000611AA /* AppDelegate.swift */,
+				C765FDEC26828369000611AA /* SceneDelegate.swift */,
+				C736DE682683D1F400237553 /* ViewControllers */,
+				C765FDF026828369000611AA /* Main.storyboard */,
+				C765FDF32682836B000611AA /* Assets.xcassets */,
+				C765FDF52682836B000611AA /* LaunchScreen.storyboard */,
+				C765FDF82682836B000611AA /* Info.plist */,
+				C765FE0126828C9C000611AA /* GoogleService-Info.plist */,
+			);
+			path = MoodyCapital;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C765FDE626828369000611AA /* MoodyCapital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C765FDFB2682836B000611AA /* Build configuration list for PBXNativeTarget "MoodyCapital" */;
+			buildPhases = (
+				9E64B8BFD9317EDBE248A0B9 /* [CP] Check Pods Manifest.lock */,
+				C765FDE326828369000611AA /* Sources */,
+				C765FDE426828369000611AA /* Frameworks */,
+				C765FDE526828369000611AA /* Resources */,
+				C18057F423F09849C394DD4D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodyCapital;
+			productName = MoodyCapital;
+			productReference = C765FDE726828369000611AA /* MoodyCapital.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C765FDDF26828369000611AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C765FDE626828369000611AA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C765FDE226828369000611AA /* Build configuration list for PBXProject "MoodyCapital" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C765FDDE26828369000611AA;
+			productRefGroup = C765FDE826828369000611AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C765FDE626828369000611AA /* MoodyCapital */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C765FDE526828369000611AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C765FDF72682836B000611AA /* LaunchScreen.storyboard in Resources */,
+				C765FE0226828C9C000611AA /* GoogleService-Info.plist in Resources */,
+				C765FDF42682836B000611AA /* Assets.xcassets in Resources */,
+				C765FDF226828369000611AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E64B8BFD9317EDBE248A0B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoodyCapital-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18057F423F09849C394DD4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoodyCapital/Pods-MoodyCapital-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoodyCapital/Pods-MoodyCapital-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoodyCapital/Pods-MoodyCapital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C765FDE326828369000611AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C765FDEF26828369000611AA /* ViewController.swift in Sources */,
+				C765FDEB26828369000611AA /* AppDelegate.swift in Sources */,
+				C736DE632683D1BB00237553 /* SignUpViewController.swift in Sources */,
+				C736DE652683D1CE00237553 /* LoginViewController.swift in Sources */,
+				C765FDED26828369000611AA /* SceneDelegate.swift in Sources */,
+				C736DE672683D1E500237553 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C765FDF026828369000611AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C765FDF126828369000611AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C765FDF52682836B000611AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C765FDF62682836B000611AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C765FDF92682836B000611AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C765FDFA2682836B000611AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C765FDFC2682836B000611AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74EB8A66E1E8881780B2F2E9 /* Pods-MoodyCapital.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoodyCapital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moody.MoodyCapital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C765FDFD2682836B000611AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960144CDC9CFBF3DA15B620B /* Pods-MoodyCapital.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoodyCapital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moody.MoodyCapital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C765FDE226828369000611AA /* Build configuration list for PBXProject "MoodyCapital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C765FDF92682836B000611AA /* Debug */,
+				C765FDFA2682836B000611AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C765FDFB2682836B000611AA /* Build configuration list for PBXNativeTarget "MoodyCapital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C765FDFC2682836B000611AA /* Debug */,
+				C765FDFD2682836B000611AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C765FDDF26828369000611AA /* Project object */;
+}

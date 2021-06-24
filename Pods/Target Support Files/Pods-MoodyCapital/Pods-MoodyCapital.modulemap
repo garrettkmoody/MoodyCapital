@@ -1,0 +1,6 @@
+framework module Pods_MoodyCapital {
+  umbrella header "Pods-MoodyCapital-umbrella.h"
+
+  export *
+  module * { export * }
+}
