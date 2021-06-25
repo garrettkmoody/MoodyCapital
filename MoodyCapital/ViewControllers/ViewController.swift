@@ -11,18 +11,28 @@ import Firebase
 
 class ViewController: UIViewController {
     
-    let ref = Database.database().reference()
-    
     @IBOutlet weak var navStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ref.child("users").child("4455").setValue(["username": "bimbo"])
+        formatViews()
         
-        navStackView.layer.cornerRadius = 20
+        
+        //Check if a user is already logged in on the phone
+        if Auth.auth().currentUser != nil {
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let viewController = mainStoryboard.instantiateViewController(withIdentifier: "TabBarView") as! UITabBarController
+            viewController.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(viewController, animated:true)
+        }
                 
         
+    }
+    
+    
+    func formatViews() {
+        navStackView.layer.cornerRadius = 20
     }
     
     

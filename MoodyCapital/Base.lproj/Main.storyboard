@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoodyCapital" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MoodyCapital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kissclipart-cryptocurrency-wallet-icon-clipart-cryptocurrency-a8849959c74f2ef7" translatesAutoresizingMaskIntoConstraints="NO" id="MjN-hz-hAS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cryptoArt" translatesAutoresizingMaskIntoConstraints="NO" id="MjN-hz-hAS">
                                 <rect key="frame" x="40" y="90" width="334" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="hQ2-bz-MRL"/>
@@ -157,17 +157,82 @@
         <!--Home View Controller-->
         <scene sceneID="TDL-i8-Ryd">
             <objects>
-                <viewController id="mWY-Wq-a8c" customClass="HomeViewController" customModule="MoodyCapital" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="mWY-Wq-a8c" customClass="HomeViewController" customModule="MoodyCapital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AeT-AM-Xuz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raA-8S-msR">
+                                <rect key="frame" x="163.5" y="436" width="87" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W78-jV-Vc4">
+                                <rect key="frame" x="177" y="760" width="60" height="30"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="onSignOutTapped:" destination="mWY-Wq-a8c" eventType="touchUpInside" id="f6E-uU-V1i"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GDQ-1l-60R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GDQ-1l-60R" firstAttribute="bottom" secondItem="W78-jV-Vc4" secondAttribute="bottom" constant="23" id="Jlp-21-ufy"/>
+                            <constraint firstItem="raA-8S-msR" firstAttribute="centerY" secondItem="AeT-AM-Xuz" secondAttribute="centerY" id="So2-U5-CxO"/>
+                            <constraint firstItem="GDQ-1l-60R" firstAttribute="trailing" secondItem="W78-jV-Vc4" secondAttribute="trailing" constant="177" id="Uoo-cu-Gpf"/>
+                            <constraint firstItem="W78-jV-Vc4" firstAttribute="leading" secondItem="GDQ-1l-60R" secondAttribute="leading" constant="177" id="d6V-4z-WZt"/>
+                            <constraint firstItem="raA-8S-msR" firstAttribute="centerX" secondItem="AeT-AM-Xuz" secondAttribute="centerX" id="xim-O2-Did"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" selectedImage="terminal" catalog="system" id="bsu-S2-LVY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="je5-oX-2QV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2561" y="40"/>
+            <point key="canvasLocation" x="3471.0144927536235" y="39.508928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xbu-MX-s3z">
+            <objects>
+                <viewController id="iYQ-8a-zeg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="02v-PL-nAX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dirty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVh-5r-E9n">
+                                <rect key="frame" x="186" y="438" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Krk-Ku-QlY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" selectedImage="ticket" catalog="system" id="pWM-sW-XfH"/>
+                    <navigationItem key="navigationItem" id="nlY-x8-F30"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8T-f0-zLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4361" y="-346"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EFc-TX-qTy">
+            <objects>
+                <viewController id="9bp-EB-2cE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1x-aF-FEj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s0Q-Lh-0g7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" selectedImage="gearshape" catalog="system" id="CYh-oc-xYw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wog-cU-Y71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4361" y="348"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="uD0-Z8-Pma">
@@ -212,7 +277,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="IRJ-a4-MUU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn9-zM-9ly">
                                         <rect key="frame" x="0.0" y="140" width="374" height="70"/>
@@ -220,6 +285,9 @@
                                             <constraint firstAttribute="height" constant="70" id="8di-ni-3JP"/>
                                         </constraints>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="onLoginTapped:" destination="nsO-yd-ht3" eventType="touchUpInside" id="LdW-nQ-vOe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -238,6 +306,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2ct-KN-7Ux"/>
+                    <connections>
+                        <outlet property="emailTF" destination="F6U-oj-nkh" id="IcO-BC-nYL"/>
+                        <outlet property="passwordTF" destination="oZY-FK-7XX" id="wNF-if-vMC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42B-08-7eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,13 +332,40 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
         </scene>
+        <!--My Subclassed Tab Bar Controller-->
+        <scene sceneID="wPL-5p-87Z">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarView" automaticallyAdjustsScrollViewInsets="NO" id="wsy-OS-bFB" customClass="MySubclassedTabBarController" customModule="MoodyCapital" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZSP-IP-Q0m" customClass="AppTabBar" customModule="MoodyCapital" customModuleProvider="target">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mWY-Wq-a8c" kind="relationship" relationship="viewControllers" id="04E-z8-WAA"/>
+                        <segue destination="iYQ-8a-zeg" kind="relationship" relationship="viewControllers" id="k7X-HJ-HNM"/>
+                        <segue destination="9bp-EB-2cE" kind="relationship" relationship="viewControllers" id="A84-eC-zJz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7g1-jS-96s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8695652173915" y="39.508928571428569"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="ZSP-IP-Q0m">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="ggy-Zv-pBE"/>
+        <segue reference="3Fg-q7-qA6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
-        <image name="kissclipart-cryptocurrency-wallet-icon-clipart-cryptocurrency-a8849959c74f2ef7" width="512" height="512"/>
+        <image name="cryptoArt" width="512" height="512"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="terminal" catalog="system" width="128" height="93"/>
+        <image name="ticket" catalog="system" width="128" height="84"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

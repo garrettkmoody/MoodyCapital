@@ -25,9 +25,11 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    // Function that designs the toast notifications that appear
     func showToast(message : String, font: UIFont) {
 
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 175, y: self.view.frame.size.height-500, width: 350, height: 35))
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 175, y: self.view.frame.size.height-self.view.frame.size.height/2, width: 350, height: 35))
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         toastLabel.textColor = UIColor.white
         toastLabel.font = font
@@ -55,16 +57,32 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func onSignUpTapped(_ sender: Any) {
+        
+        //Ensure that all elements on the form are filled out before continuing
         if(!verifyForm()) {
             return
         }
         
+        //Creates a user in Firebase
         Auth.auth().createUser(withEmail: emailTF.text!.trimmingCharacters(in: .whitespacesAndNewlines), password: passwordTF.text!.trimmingCharacters(in: .whitespacesAndNewlines)) {
             (authResult, error) in
-          // ...
+          //If there is no error, add username and uid info into the Database
             if(error == nil) {
                 let ref = Database.database().reference()
                 ref.child("users").child(authResult!.user.uid).setValue(["username": self.usernameTF.text!.trimmingCharacters(in: .whitespacesAndNewlines)])
+                self.showToast(message: "Signed Up Successfully!", font: .systemFont(ofSize: 18))
+               
+                //Afterwards, sign in the user and open up the home screen
+                Auth.auth().signIn(withEmail: self.emailTF.text!.trimmingCharacters(in: .whitespacesAndNewlines), password: self.passwordTF.text!.trimmingCharacters(in: .whitespacesAndNewlines)) { (authResult, error) in
+                    if(error == nil) {
+                        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "TabBarView") as! UITabBarController
+                        viewController.modalPresentationStyle = .fullScreen
+                        self.navigationController!.pushViewController(viewController, animated:true)
+                    } else {
+                        print(error!)
+                    }
+                }
             } else {
                 print(error!)
             }

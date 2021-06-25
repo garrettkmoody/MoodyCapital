@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		737FFBE76D8F4472BFD24EC8 /* Pods_MoodyCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F96823651864CA7790D8474 /* Pods_MoodyCapital.framework */; };
+		C71DAA5A2685706900B9E71E /* TabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71DAA592685706900B9E71E /* TabBarDelegate.swift */; };
+		C71DAA5C268577DF00B9E71E /* CustomAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71DAA5B268577DF00B9E71E /* CustomAppBar.swift */; };
 		C736DE632683D1BB00237553 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736DE622683D1BB00237553 /* SignUpViewController.swift */; };
 		C736DE652683D1CE00237553 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736DE642683D1CE00237553 /* LoginViewController.swift */; };
 		C736DE672683D1E500237553 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736DE662683D1E500237553 /* HomeViewController.swift */; };
@@ -24,6 +26,8 @@
 		2F96823651864CA7790D8474 /* Pods_MoodyCapital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodyCapital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EB8A66E1E8881780B2F2E9 /* Pods-MoodyCapital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodyCapital.debug.xcconfig"; path = "Target Support Files/Pods-MoodyCapital/Pods-MoodyCapital.debug.xcconfig"; sourceTree = "<group>"; };
 		960144CDC9CFBF3DA15B620B /* Pods-MoodyCapital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodyCapital.release.xcconfig"; path = "Target Support Files/Pods-MoodyCapital/Pods-MoodyCapital.release.xcconfig"; sourceTree = "<group>"; };
+		C71DAA592685706900B9E71E /* TabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDelegate.swift; sourceTree = "<group>"; };
+		C71DAA5B268577DF00B9E71E /* CustomAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppBar.swift; sourceTree = "<group>"; };
 		C736DE622683D1BB00237553 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C736DE642683D1CE00237553 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C736DE662683D1E500237553 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 			children = (
 				C765FDEA26828369000611AA /* AppDelegate.swift */,
 				C765FDEC26828369000611AA /* SceneDelegate.swift */,
+				C71DAA592685706900B9E71E /* TabBarDelegate.swift */,
+				C71DAA5B268577DF00B9E71E /* CustomAppBar.swift */,
 				C736DE682683D1F400237553 /* ViewControllers */,
 				C765FDF026828369000611AA /* Main.storyboard */,
 				C765FDF32682836B000611AA /* Assets.xcassets */,
@@ -231,6 +237,8 @@
 				C736DE632683D1BB00237553 /* SignUpViewController.swift in Sources */,
 				C736DE652683D1CE00237553 /* LoginViewController.swift in Sources */,
 				C765FDED26828369000611AA /* SceneDelegate.swift in Sources */,
+				C71DAA5A2685706900B9E71E /* TabBarDelegate.swift in Sources */,
+				C71DAA5C268577DF00B9E71E /* CustomAppBar.swift in Sources */,
 				C736DE672683D1E500237553 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

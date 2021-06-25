@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
@@ -13,6 +14,20 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onSignOutTapped(_ sender: Any) {
+        logoutUser()
+    }
+    
+    func logoutUser() {
+        // call from any screen
+        
+        do { try Auth.auth().signOut() }
+        catch { print("Already signed out") }
+        
+        navigationController?.popToRootViewController(animated: true)
+        
     }
     
 
