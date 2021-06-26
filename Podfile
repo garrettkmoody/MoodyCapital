@@ -12,4 +12,5 @@ target 'MoodyCapital' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'Firebase/Analytics'
+  pod 'Charts'
 end
