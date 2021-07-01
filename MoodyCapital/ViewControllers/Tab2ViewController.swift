@@ -57,8 +57,8 @@ class Tab2ViewController: UIViewController, ChartViewDelegate {
     
     func retrieveFireBaseData() {
         
-        var initial:Double = 0
-        var share:Double = 0
+        var initial:Double = 0.0
+        var share:Double = 0.0
         
         let user = Auth.auth().currentUser
         let ref = Database.database().reference().child("users").child(user!.uid).child("username")
@@ -81,10 +81,12 @@ class Tab2ViewController: UIViewController, ChartViewDelegate {
         let ref2 = Database.database().reference().child("users").child(user!.uid)
         
 
-        ref2.observeSingleEvent(of: .value, with: { snapshot in
+        ref2.observe(.value, with: { snapshot in
             
             for child in snapshot.children {
-                let snap = child as! DataSnapshot
+                let snap = child as!
+                    DataSnapshot
+                
                 switch snap.key {
                 case "initial":
                     initial = snap.value as! Double
@@ -96,35 +98,37 @@ class Tab2ViewController: UIViewController, ChartViewDelegate {
                 
             }
             
+            let ref3 = Database.database().reference().child("holdings")
+
+            ref3.observeSingleEvent(of: .value, with: { (snapshot) in
+
+                if let balance = snapshot.value as? Double {
+
+                    let balanceTruncated = self.trunc(thisNum: balance * share, places: 2)
+                    
+                    let percent = self.trunc(thisNum: (balanceTruncated / initial - 1) * 100, places: 2)
+
+                    UIView.transition(with: self.holdingValueLB,
+                                  duration: 0.25,
+                                   options: .transitionCrossDissolve,
+                                animations: { [weak self] in
+                                    self?.holdingValueLB.text = "$\(balanceTruncated)"
+                             }, completion: nil)
+                    
+                    
+                    UIView.transition(with: self.percentLB,
+                                  duration: 0.25,
+                                   options: .transitionCrossDissolve,
+                                animations: { [weak self] in
+                                    self?.percentLB.text = "\(percent)%"
+                             }, completion: nil)
+                }
+            })
+
+            
         })
         
-        let ref3 = Database.database().reference().child("holdings")
-
-        ref3.observeSingleEvent(of: .value, with: { (snapshot) in
-
-            if let balance = snapshot.value as? Double {
-
-                let balanceTruncated = self.trunc(thisNum: balance * share, places: 2)
                 
-                let percent = self.trunc(thisNum: (balanceTruncated / initial - 1) * 100, places: 2)
-
-                UIView.transition(with: self.holdingValueLB,
-                              duration: 0.25,
-                               options: .transitionCrossDissolve,
-                            animations: { [weak self] in
-                                self?.holdingValueLB.text = "$\(balanceTruncated)"
-                         }, completion: nil)
-                
-                
-                UIView.transition(with: self.percentLB,
-                              duration: 0.25,
-                               options: .transitionCrossDissolve,
-                            animations: { [weak self] in
-                                self?.percentLB.text = "\(percent)%"
-                         }, completion: nil)
-            }
-        })
-        
         
         
     }
