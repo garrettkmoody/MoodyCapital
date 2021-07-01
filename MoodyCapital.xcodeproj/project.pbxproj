@@ -20,6 +20,7 @@
 		C765FDF42682836B000611AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C765FDF32682836B000611AA /* Assets.xcassets */; };
 		C765FDF72682836B000611AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C765FDF52682836B000611AA /* LaunchScreen.storyboard */; };
 		C765FE0226828C9C000611AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C765FE0126828C9C000611AA /* GoogleService-Info.plist */; };
+		C76984A8268BF0EC00E5F1B1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76984A7268BF0EC00E5F1B1 /* SettingsViewController.swift */; };
 		C77FDBFE2686DC0D004932FB /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FDBFD2686DC0D004932FB /* Tab2ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		C765FDF62682836B000611AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C765FDF82682836B000611AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C765FE0126828C9C000611AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C76984A7268BF0EC00E5F1B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C77FDBFD2686DC0D004932FB /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				C736DE622683D1BB00237553 /* SignUpViewController.swift */,
 				C765FDEE26828369000611AA /* ViewController.swift */,
 				C77FDBFD2686DC0D004932FB /* Tab2ViewController.swift */,
+				C76984A7268BF0EC00E5F1B1 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				C765FDEF26828369000611AA /* ViewController.swift in Sources */,
 				C765FDEB26828369000611AA /* AppDelegate.swift in Sources */,
 				C77FDBFE2686DC0D004932FB /* Tab2ViewController.swift in Sources */,
+				C76984A8268BF0EC00E5F1B1 /* SettingsViewController.swift in Sources */,
 				C736DE632683D1BB00237553 /* SignUpViewController.swift in Sources */,
 				C736DE652683D1CE00237553 /* LoginViewController.swift in Sources */,
 				C765FDED26828369000611AA /* SceneDelegate.swift in Sources */,

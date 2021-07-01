@@ -163,27 +163,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raA-8S-msR">
-                                <rect key="frame" x="163.5" y="436" width="87" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raA-8S-msR">
+                                <rect key="frame" x="144" y="436" width="126" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W78-jV-Vc4">
-                                <rect key="frame" x="177" y="760" width="60" height="30"/>
-                                <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <action selector="onSignOutTapped:" destination="mWY-Wq-a8c" eventType="touchUpInside" id="f6E-uU-V1i"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GDQ-1l-60R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GDQ-1l-60R" firstAttribute="bottom" secondItem="W78-jV-Vc4" secondAttribute="bottom" constant="23" id="Jlp-21-ufy"/>
                             <constraint firstItem="raA-8S-msR" firstAttribute="centerY" secondItem="AeT-AM-Xuz" secondAttribute="centerY" id="So2-U5-CxO"/>
-                            <constraint firstItem="GDQ-1l-60R" firstAttribute="trailing" secondItem="W78-jV-Vc4" secondAttribute="trailing" constant="177" id="Uoo-cu-Gpf"/>
-                            <constraint firstItem="W78-jV-Vc4" firstAttribute="leading" secondItem="GDQ-1l-60R" secondAttribute="leading" constant="177" id="d6V-4z-WZt"/>
                             <constraint firstItem="raA-8S-msR" firstAttribute="centerX" secondItem="AeT-AM-Xuz" secondAttribute="centerX" id="xim-O2-Did"/>
                         </constraints>
                     </view>
@@ -262,24 +252,45 @@
                     <tabBarItem key="tabBarItem" selectedImage="ticket" catalog="system" id="pWM-sW-XfH"/>
                     <navigationItem key="navigationItem" id="nlY-x8-F30"/>
                     <connections>
+                        <outlet property="holdingValueLB" destination="sNg-nJ-ku9" id="07R-Gr-Y3n"/>
                         <outlet property="mainSV" destination="V6c-ml-Wag" id="Mqz-O4-SPO"/>
+                        <outlet property="nameLB" destination="wVh-5r-E9n" id="48q-2d-vDn"/>
+                        <outlet property="percentLB" destination="JDb-4Q-nxh" id="rWS-GS-zUi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8T-f0-zLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4361" y="-346"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="EFc-TX-qTy">
             <objects>
-                <viewController id="9bp-EB-2cE" sceneMemberID="viewController">
+                <viewController id="9bp-EB-2cE" customClass="SettingsViewController" customModule="MoodyCapital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1x-aF-FEj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOU-jy-l63">
+                                <rect key="frame" x="10" y="743" width="394" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="onSignOutTapped:" destination="9bp-EB-2cE" eventType="touchUpInside" id="NE6-e1-Ywy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="s0Q-Lh-0g7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s0Q-Lh-0g7" firstAttribute="trailing" secondItem="OOU-jy-l63" secondAttribute="trailing" constant="10" id="6yr-TU-3VM"/>
+                            <constraint firstItem="s0Q-Lh-0g7" firstAttribute="bottom" secondItem="OOU-jy-l63" secondAttribute="bottom" constant="40" id="ade-3f-cFB"/>
+                            <constraint firstItem="OOU-jy-l63" firstAttribute="leading" secondItem="s0Q-Lh-0g7" secondAttribute="leading" constant="10" id="juU-HW-cMH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" selectedImage="gearshape" catalog="system" id="CYh-oc-xYw"/>
+                    <connections>
+                        <outlet property="signoutBT" destination="OOU-jy-l63" id="pwk-TY-SNn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wog-cU-Y71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
