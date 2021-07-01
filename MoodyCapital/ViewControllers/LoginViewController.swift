@@ -16,8 +16,37 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        formatViews()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    @objc func keyboardWillChange(notification: Notification) {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        if(notification.name == UIResponder.keyboardWillChangeFrameNotification) {
+            view.frame.origin.y = -240
+        } else if(notification.name == UIResponder.keyboardWillHideNotification) {
+            view.frame.origin.y = 0
+        }
+        
     }
     
     func showToast(message : String, font: UIFont) {
@@ -65,6 +94,12 @@ class LoginViewController: UIViewController {
         } else {
             showToast(message: "Please fill out all fields!", font: .systemFont(ofSize: 18))
         }
+        
+        
+    }
+    
+    func formatViews() {
+        
     }
     
     /*

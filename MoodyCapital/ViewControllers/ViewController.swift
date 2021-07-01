@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     
     func formatViews() {
         navStackView.layer.cornerRadius = 20
+        
     }
     
     

@@ -21,8 +21,36 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        formatViews()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    @objc func keyboardWillChange(notification: Notification) {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        if(notification.name == UIResponder.keyboardWillChangeFrameNotification) {
+            view.frame.origin.y = -200
+        } else if(notification.name == UIResponder.keyboardWillHideNotification) {
+            view.frame.origin.y = 0
+        }
+        
     }
     
     
@@ -69,7 +97,10 @@ class SignUpViewController: UIViewController {
           //If there is no error, add username and uid info into the Database
             if(error == nil) {
                 let ref = Database.database().reference()
-                ref.child("users").child(authResult!.user.uid).setValue(["username": self.usernameTF.text!.trimmingCharacters(in: .whitespacesAndNewlines)])
+                ref.child("users").child(authResult!.user.uid).updateChildValues(["username": self.usernameTF.text!.trimmingCharacters(in: .whitespacesAndNewlines)])
+                ref.child("users").child(authResult!.user.uid).updateChildValues(["initial": 0.0])
+                ref.child("users").child(authResult!.user.uid).updateChildValues(["share": 0.0])
+                
                 self.showToast(message: "Signed Up Successfully!", font: .systemFont(ofSize: 18))
                
                 //Afterwards, sign in the user and open up the home screen
@@ -87,6 +118,12 @@ class SignUpViewController: UIViewController {
                 print(error!)
             }
         }
+        
+        
+    }
+    
+    func formatViews() {
+        
     }
     /*
     // MARK: - Navigation

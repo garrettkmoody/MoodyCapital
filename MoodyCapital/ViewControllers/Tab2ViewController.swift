@@ -40,6 +40,7 @@ class Tab2ViewController: UIViewController, ChartViewDelegate {
         super.viewDidLayoutSubviews()
         lineChart.frame = CGRect(x:0, y: 0, width: self.view.frame.size.width - 20, height: self.view.frame.size.height - self.view.frame.size.height/1.7)
         lineChart.center = view.center
+        lineChart.extraTopOffset = 40
         view.addSubview(lineChart)
         
         var entries = [ChartDataEntry]()

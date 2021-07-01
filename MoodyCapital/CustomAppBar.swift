@@ -35,7 +35,6 @@ class AppTabBar: UITabBar {
     }
 
     func createPath() -> CGPath {
-        let height: CGFloat = 86.0
         let path = UIBezierPath()
         let centerWidth = self.frame.width / 2
         path.move(to: CGPoint(x: 0, y: -10))

@@ -198,12 +198,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="V6c-ml-Wag">
-                                <rect key="frame" x="20" y="104" width="374" height="115"/>
+                                <rect key="frame" x="20" y="134" width="374" height="115"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investment Holding Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNt-XV-YCp">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="7vq-Ek-nmo"/>
+                                            <constraint firstAttribute="height" constant="40" id="cSp-6n-qXd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" name="AccentColor"/>
@@ -212,12 +212,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="McV-G0-4Bg">
                                         <rect key="frame" x="0.0" y="65" width="374" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDb-4Q-nxh">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDb-4Q-nxh">
                                                 <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="OrZ-dL-Dw3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                 <color key="textColor" systemColor="systemGreenColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -245,7 +245,7 @@
                             <constraint firstItem="V6c-ml-Wag" firstAttribute="leading" secondItem="Krk-Ku-QlY" secondAttribute="leading" constant="20" id="3iP-FN-OVp"/>
                             <constraint firstItem="wVh-5r-E9n" firstAttribute="leading" secondItem="Krk-Ku-QlY" secondAttribute="leading" constant="20" id="CNg-4W-YbM"/>
                             <constraint firstItem="Krk-Ku-QlY" firstAttribute="trailing" secondItem="wVh-5r-E9n" secondAttribute="trailing" constant="20" id="G63-2W-erz"/>
-                            <constraint firstItem="V6c-ml-Wag" firstAttribute="top" secondItem="wVh-5r-E9n" secondAttribute="bottom" constant="10" id="v9K-BW-S2m"/>
+                            <constraint firstItem="V6c-ml-Wag" firstAttribute="top" secondItem="wVh-5r-E9n" secondAttribute="bottom" constant="40" id="v9K-BW-S2m"/>
                             <constraint firstItem="wVh-5r-E9n" firstAttribute="top" secondItem="Krk-Ku-QlY" secondAttribute="top" constant="20" id="vBO-25-XgV"/>
                         </constraints>
                     </view>

@@ -14,6 +14,7 @@ class MySubclassedTabBarController: UITabBarController {
       super.viewDidLoad()
       delegate = self
         self.selectedIndex = 1
+        UITabBar.appearance().unselectedItemTintColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         UITabBar.appearance().tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
 
             for i in 0 ..< self.tabBar.items!.count {
